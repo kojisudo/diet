@@ -3,16 +3,16 @@
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script>
       $(document).ready(function () {
-      if (navigator.userAgent.toLowerCase().indexOf("android") >= 0) {
-      window.location.href = 'https://play.google.com/store/apps/details?id=jp.pipo.diet';
-      } else {
-      let lang = (window.navigator.languages && window.navigator.languages[0]) || window.navigator.language || window.navigator.userLanguage || window.navigator.browserLanguage;
-      if (lang === 'ja' || lang === 'ja-JP') {
-      window.location.href = 'https://apps.apple.com/jp/app/tweetdiet/id1564400471';
-      } else {
-      window.location.href = 'https://apps.apple.com/us/app/tweetdiet/id1564400471';
-      }
-      }
+        if (navigator.userAgent.toLowerCase().indexOf("android") >= 0) {
+          window.location.href = 'https://play.google.com/store/apps/details?id=jp.pipo.diet';
+        } else {
+          let lang = (window.navigator.languages && window.navigator.languages[0]) || window.navigator.language || window.navigator.userLanguage || window.navigator.browserLanguage;
+          if (lang === 'ja' || lang === 'ja-JP') {
+            window.location.href = 'https://apps.apple.com/jp/app/tweetdiet/id1564400471';
+          } else {
+            window.location.href = 'https://apps.apple.com/us/app/tweetdiet/id1564400471';
+          }
+        }
       });
     </script>
   </head>
